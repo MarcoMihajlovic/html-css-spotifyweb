@@ -1,0 +1,164 @@
+body {
+  width: 100%;
+  height: 100vh;
+  background: #141922;
+}
+
+#upgrade {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 5;
+}
+
+#my-side-nav-bar {
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  flex-flow: column;
+  background: black;
+  width: 50px;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  padding-top: 60px;
+  margin-bottom: 90px;
+}
+
+#my-main-content {
+  margin-left: 50px;
+  margin-top: 60px;
+}
+
+.my-container {
+  overflow-y: auto;
+  padding-bottom: 90px;
+  padding-left: 5px;
+}
+
+.my-main-content-nav {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.my-content {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+footer {
+  display: flex;
+  position: fixed;
+  background: #282828;
+  height: 90px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (min-width: 992px) {
+  /* .my-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  } */
+
+  #upgrade {
+    padding: 0 15px;
+  }
+
+  footer {
+    padding: 0 15px;
+  }
+}
+
+@media screen and (min-width: 768px){
+  #my-side-nav-bar {
+    display: block;
+    width: 250px;
+  }
+
+  #my-main-content {
+    margin-left: 250px;
+  }
+
+  .my-flex-box {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    min-height: 300px;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 100px;
+  }
+}
+
+/* DEBUG */
+.footer-box {
+  height: 50px;
+  width: 200px;
+}
+
+.big-footer-box {
+  height: 80px;
+  width: 400px;
+}
+
+.nav-box {
+  height: 100px;
+  min-height: 100px;
+  width: 100%;
+}
+
+.big-nav-box {
+  height: 200px;
+  width: 100%;
+}
+
+.upgrade-box {
+  height: 100%;
+  width: 100px;
+}
+
+.text-box {
+  height: 20px;
+  width: 100px;
+}
+
+.title-box {
+  margin-top: 10px;
+  height: 50px;
+  width: 200px;
+}
+
+.content-box {
+  height: 12vw;
+  width: 12vw;
+  min-width: 130px;
+  min-height: 130px;
+  margin: 20px 0;
+}
+
+.bubble {
+  border-radius: 50%;
+}
+
+.white {
+  background: white;
+  border: 1px solid red;
+}
+
+.blue {
+  background: blue;
+  border: 1px solid yellow;
+}
