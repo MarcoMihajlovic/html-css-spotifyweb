@@ -325,12 +325,46 @@ footer {
   align-items: center;
 }
 
+.my-footer-box {
+  display: flex;
+  /* min-width: 200px; */
+  align-items: center;
+}
+
+.my-footer-box img {
+  height: 50px;
+}
+
+.my-footer-box h4 {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: white;
+}
+
+.my-footer-box a {
+  color: grey;
+  text-decoration: none;
+}
+
+.my-footer-box a:hover {
+  color: white;
+}
+
+.my-song-info {
+  margin-left: 10px;
+}
+
+.my-song-icon {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 10px;
+}
+
+.my-song-icon i {
+  margin-bottom: 5px;
+}
+
 @media screen and (min-width: 992px) {
-  /* .my-container {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-  } */
 
   #upgrade {
     padding: 0 15px;
@@ -392,6 +426,16 @@ footer {
 
   .my-content {
     justify-content: flex-start;
+  }
+
+  .my-song-info {
+    flex-flow: row;
+    margin-left: 10px;
+    margin-bottom: 0;
+  }
+
+  .my-song-icon i {
+    margin-left: 5px;
   }
 }
 
