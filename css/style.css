@@ -208,6 +208,10 @@ a {
   padding-left: 5px;
 }
 
+.my-container {
+  color: grey;
+}
+
 .my-main-content-nav {
   width: 100%;
   display: flex;
@@ -286,7 +290,7 @@ a {
 
 .my-cover a {
   display: block;
-  padding: 100% 50%;
+  padding: 50% 50%;
 }
 
 .my-overlay-2 {
@@ -306,6 +310,10 @@ a {
 
 .content-box:hover .my-cover {
   display: block;
+}
+
+.bubble {
+  border-radius: 50%;
 }
 
 footer {
@@ -420,10 +428,6 @@ footer {
   margin-top: 10px;
   height: 50px;
   width: 200px;
-}
-
-.bubble {
-  border-radius: 50%;
 }
 
 .white {
