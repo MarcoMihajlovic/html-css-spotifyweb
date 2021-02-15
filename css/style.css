@@ -259,8 +259,8 @@ a {
   flex-flow: column;
   align-items: center;
   width: 50vw;
-  /* min-width: 150px; */
-  margin: 20px 20px;
+  min-width: 150px;
+  margin: 10px 10px;
 }
 
 .album-cover img {
@@ -386,7 +386,7 @@ footer {
   }
 
   .content-box {
-    width: 10vw;
+    width: 12vw;
     min-width: 110px;
   }
 
