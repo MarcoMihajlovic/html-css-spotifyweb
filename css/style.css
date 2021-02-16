@@ -20,11 +20,11 @@ a {
   left: 0;
   right: 0;
   background-color: rgba(0, 0, 0, 0.3);
-  z-index: 5;
+  z-index: 0;
 }
 
 #upgrade img {
-  width: 150px;
+  width: 1px;
 }
 
 #upgrade .btn {
@@ -46,13 +46,13 @@ a {
   justify-content: space-between;
   flex-flow: column;
   background: black;
-  width: 50px;
+  width: 40px;
   left: 0;
   bottom: 0;
   top: 0;
-  padding-top: 60px;
   margin-bottom: 70px;
   min-height: 200PX;
+  z-index: 5;
 }
 
 .my-menu {
@@ -178,7 +178,7 @@ a {
   display: inline-block;
   width: 30px;
   margin-left: 5px;
-  background-color: #808080;
+  background-color: black;
   border-radius: 50%;
 }
 
@@ -200,7 +200,7 @@ a {
 }
 
 #my-main-content {
-  margin-left: 50px;
+  margin-left: 40px;
   margin-top: 60px;
 }
 
@@ -258,9 +258,10 @@ a {
   display: flex;
   flex-flow: column;
   align-items: center;
-  width: 50vw;
+  text-align: center;
+  width: 40vw;
   min-width: 150px;
-  margin: 10px 10px;
+  margin: 5px 5px;
 }
 
 .album-cover img {
@@ -323,6 +324,7 @@ footer {
   right: 0;
   justify-content: space-between;
   align-items: center;
+  z-index: 6;
 }
 
 .my-footer-box {
@@ -332,7 +334,7 @@ footer {
 }
 
 .my-footer-box img {
-  height: 50px;
+  height: 7vw;
 }
 
 .my-footer-box h4 {
@@ -364,6 +366,93 @@ footer {
   margin-bottom: 5px;
 }
 
+.reproduction-bar {
+  display: flex;
+  width: 7vw;
+}
+
+.played {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 35%;
+  height: 5px;
+  background-color: gray;
+}
+
+.volume-icons a {
+  color: white;
+  margin: 5px;
+}
+
+.player-circle {
+  display: none;
+  background-color: white;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+}
+
+.unplayed {
+  height: 5px;
+  width: 65%;
+  background-color: dimgrey;
+}
+
+.reproduction-bar:hover .played{
+  background-color: #9feb2c;
+}
+
+.reproduction-bar:hover .player-circle {
+  display: block;
+}
+
+.my-footer-box-2 {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.player-icons {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.player-icons a {
+  margin: 5px;
+  color: white;
+}
+
+.fa-play-circle:hover {
+  font-size: 1.5em;
+}
+
+.reproduction-bar-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.reproduction-bar-2 p {
+  margin: 10px;
+  color: white;
+}
+
+.my-bar {
+  display: flex;
+  height: 5px;
+  width: 20vw;
+}
+
+.reproduction-bar-2:hover .played{
+  background-color: #9feb2c;
+}
+
+.reproduction-bar-2:hover .player-circle {
+  display: block;
+}
+
 @media screen and (min-width: 992px) {
 
   #upgrade {
@@ -376,9 +465,20 @@ footer {
 }
 
 @media screen and (min-width: 768px){
+
+  #upgrade {
+    z-index: 5;
+  }
+
+  #upgrade img {
+    width: 150px;
+  }
+
   #my-side-nav-bar {
     display: block;
     width: 250px;
+    padding-top: 60px;
+    z-index: 0;
   }
 
   .my-menu-option img {
